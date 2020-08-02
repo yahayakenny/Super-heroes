@@ -4,7 +4,9 @@ const displayHeroes = document.getElementById('display-heroes');
 
 const findHero = async () => {
   const response = await fetch(
+   
     `https://akabab.github.io/superhero-api/api/all.json`
+
   );
 
   const data = await response.json();
@@ -14,16 +16,14 @@ const findHero = async () => {
         <div class="flip-card card" style="width: 25rem">
         <div class="flip-card-inner">
           <div class="flip-card-front">
-            <img src=${item.images.lg} alt="Avatar" style="width:350px;height:400px;">
+            <img src=${item.images.lg} alt="Avatar" style="width:350px;height:400px;" class = "img-responsive">
           </div>
           <div class="flip-card-back">
-            <h1> <br>${item.name}</h1>
-            <h4>${item.appearance.gender}</h4>
-            <h4>${item.appearance.race}</h4>
-            <h4>${item.work.occupation}</h4>
-            <h4>${item.biography.publisher}</h4>
-            <p>Architect & Engineer</p>
-            <p>We love that guy</p>
+            <h1> <br>Name: ${item.name}</h1>
+            <h3> Gender: ${item.appearance.gender}</h3>
+            <h3>Race: ${item.appearance.race}</h3>
+            <h3>Occupation: ${item.work.occupation}</h3>
+            <h3>Publisher: ${item.biography.publisher}</h3>       
           </div>
         </div>
       </div>

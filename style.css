@@ -1,14 +1,19 @@
 body {
-    background: url(images/marvel_top.jpg) no-repeat center center fixed; 
+   background-color: #1d1d1d;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   color: white;
+  font-family: 'Raleway';
 }
 
 .title {
   font-size: 70px;
+  text-align: center;
+  color:orangered;
+  font-style: italic;
+
 }
 
 
@@ -29,6 +34,7 @@ body {
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
+    font-family: 'Raleway';
   }
   
   .flip-card:hover .flip-card-inner {
@@ -54,9 +60,20 @@ body {
   .flip-card-back {
     background-color: black;
     color: white;
-    font-family: "lato";
+    font-family: 'Raleway';
     padding: 10px;
     transform: rotateY(180deg);
+  }
+
+  .flip-card-back h3 {
+    font-family: 'Raleway';
+    font-weight: bold;
+  }
+
+  .flip-card-back h1 {
+    color: orangered;
+    font-weight: bolder;
+    font-style: italic;
   }
   
   .display-heroes {
@@ -69,6 +86,7 @@ body {
 
   .card {
     margin-top: 70px;
+    font-family: 'Raleway';
    
 }
 
